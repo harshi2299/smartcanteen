@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCanTeen - Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Create Your SmartCanTeen Account</h2>
+    <form id="registerForm">
+      <div class="input-group">
+        <label for="regNo">Registration Number</label>
+        <input type="text" id="regNo" placeholder="e.g. CAN1234567" required>
+      </div>
+
+      <div class="input-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="input-group">
+        <label for="username">Choose Username</label>
+        <input type="text" id="username" placeholder="Choose a unique username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Create Password</label>
+        <input type="password" id="password" placeholder="Create a password" required>
+        <span id="togglePassword" class="toggle-password">Show</span>
+      </div>
+
+      <button type="submit" id="btn">Register</button>
+      <p id="success-message"></p>
+
+      <div class="actions">
+        <a href="login.html">Already have an account? Login</a>
+      </div>
+    </form>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

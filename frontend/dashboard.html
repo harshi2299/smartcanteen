@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCanTeen - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="welcomeUser">Welcome, Student!</h2>
+
+    <h3>Today's Menu</h3>
+    <div id="menuList">
+      <!-- Menu items will be loaded here -->
+    </div>
+
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <p id="totalPrice">Total: ₹0</p>
+    <button onclick="placeOrder()">Place Order</button>
+  </div>
+	<button onclick="viewMyOrders()">View My Orders</button>
+<div id="myOrders"></div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

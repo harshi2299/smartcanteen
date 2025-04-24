@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartCanTeen Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .panel {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #28a745;
+      text-align: center;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    select {
+      padding: 5px;
+    }
+    input[type="text"], input[type="number"] {
+      padding: 5px;
+      width: 80%;
+    }
+    .btn {
+      background: #28a745;
+      color: #fff;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h2>SmartCanTeen - Admin Panel</h2>
+
+    <div class="section" id="orderSection">
+      <h3>Orders</h3>
+      <table id="orderTable">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Items</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Orders will load here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="menuSection">
+      <h3>Manage Menu</h3>
+      <table id="menuTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price (₹)</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Menu items will load here -->
+        </tbody>
+      </table>
+
+      <h4>Add New Item</h4>
+      <input type="text" id="newItemName" placeholder="Item Name">
+      <input type="number" id="newItemPrice" placeholder="Price">
+      <button class="btn" onclick="addMenuItem()">Add</button>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

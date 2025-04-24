@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCanTeen - Student Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>SmartCanTeen - Student Login</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="regNo">Registration Number</label>
+        <input type="text" id="regNo" placeholder="e.g. U05C22S0..." required>
+      </div>
+
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <span id="togglePassword" class="toggle-password">Show</span>
+      </div>
+
+      <button type="submit" id="btn">Login</button>
+      <p id="error-message"></p>
+
+      <div class="actions">
+        <a href="#">Forgot Password?</a>
+        <a href="register.html" class="create-account">New? Create your account!</a>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
